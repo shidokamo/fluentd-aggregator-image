@@ -1,11 +1,12 @@
 # Fluentd Aggregator Image
 Fluentd の Docker イメージです。GKEのポッド上で多くの入力元からのログを一元化することを想定しています。
+そのため、Google Cloud Storage の出力プラグインがインストールされています。
 
 ## リファレンスデザイン
 [Fluentd GCP Image](https://github.com/GoogleCloudPlatform/k8s-stackdriver/tree/master/fluentd-gcp-image)
 
 ## debian-base-amd64:v1.0.0
-非常に軽量の debian イメージです。サイドカーとして多くの pod にデプロイする関係上これは重要です。
+非常に軽量の debian イメージです。
 sh などの最低限のツールは搭載されていますが、例えば、/bin/bash などを実行することはできません。
 `apt-get` は使用できますが、より便利な `clean-install` というコマンドが提供されています。
 

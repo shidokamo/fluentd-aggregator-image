@@ -1,5 +1,5 @@
 GEM
-  remote: https://api.rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
@@ -87,7 +87,7 @@ GEM
     tzinfo-data (1.2019.2)
       tzinfo (>= 1.0.0)
     uber (0.1.0)
-    yajl-ruby (1.4.1)
+    yajl-ruby (1.4.2)
 
 PLATFORMS
   ruby
